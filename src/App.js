@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Books from './components/books';
 import Categories from './components/categories';
 import Nav from './components/nav';
 import './App.css';
+import AddBook from './components/books/AddBook';
+import BookList from './components/books/BookList';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Categories />
         </Route>
         <Route path="/">
-          <Books />
+          <AddBook />
+          <BookList />
         </Route>
       </Switch>
     </Router>
