@@ -19,6 +19,9 @@
 
 - Components.
 
+## Image Preview
+![Screenshot Main Page](./src/img/capture.jpg)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
