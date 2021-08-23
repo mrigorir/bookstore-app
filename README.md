@@ -1,70 +1,98 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BookStore
 
-## Available Scripts
+> The Bookstore is an MVP website from [ Zeplin project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378) that offers the following features:
 
-In the project directory, you can run:
+- Display a list of books.
 
-### `yarn start`
+- Add a book.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Remove a selected book.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## This project is built with: 
 
-### `yarn test`
+- React. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React Router.
 
-### `yarn build`
+- Redux. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Image Preview
+![Screenshot Main Page](./src/img/capture.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+To get a local copy up and running follow these simple example steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- On the project, GitHub page, navigate to the [main page of the repository](https://github.com/mrigorir/bookstore-app)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Click on a button named `Code`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Copy the project URL as displayed on HTTPS tab
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal
 
-## Learn More
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  `$ git clone https://github.com/mrigorir/bookstore-app` <em>Press Enter key</em><br>
 
-### Code Splitting
+- Your local copy will be created.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Please note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
-### Analyzing the Bundle Size
+- After you get the project aiming to the desired directory, you need now to install ruby globally and follow the steps below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Github Actions
 
-### Making a Progressive Web App
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+   
+2. Create the `feature/branch` and push.
+   
+3. Start working on your milestone as usual.
+   
+4. Open a PR from the `feature/branch` when your work is done.
 
-### Advanced Configuration
+### Usage 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Make sure you have npm and node installed in your terminal.
 
-### Deployment
+- I recommend the use of VS code as a code editor, but you can use whatever you want.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Run `npm install` after you clone the project.
 
-### `yarn build` fails to minify
+- Run in your terminal `npm start` OR `yarn start` to start React website.
+  
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **Marco Parra**
+
+- GitHub: [@mrigorir](https://github.com/mrigorir)
+- Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
+- LinkedIn: [@marco-alonso-parra](https://www.linkedin.com/in/marco-alonso-parra/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mrigorir/bookstore-app/issues).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Microverse Activities
+
+
+## 📝 License
+
+This project is [MIT](https://github.com/mrigorir/bookstore-app/blob/main/LICENSE) licensed.
