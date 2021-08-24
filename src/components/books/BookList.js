@@ -1,14 +1,18 @@
 import React from 'react';
-import mockBooks from './mockBooks';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const BookList = () => (
-  <ul>
-    {mockBooks.map((book) => {
-      const { id, title, author } = book;
-      return <Book key={id} title={title} author={author} />;
-    })}
-  </ul>
-);
+const BookList = () => {
+  const books = useSelector((state) => state.books);
+
+  return (
+    <ul>
+      {books.map((book) => {
+        const { id, title, author } = book;
+        return <Book key={id} id={id} title={title} author={author} />;
+      })}
+    </ul>
+  );
+};
 
 export default BookList;
