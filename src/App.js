@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Categories from './components/categories';
 import Nav from './components/nav';
-import './App.css';
 import AddBook from './components/books/AddBook';
 import BookList from './components/books/BookList';
+import Categories from './components/categories';
+import './App.css';
 
 function App() {
   return (
