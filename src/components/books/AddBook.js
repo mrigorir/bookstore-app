@@ -8,16 +8,21 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
-    const author = e.target.author.value;
+    const category = e.target.category.value;
     e.target.title.value = '';
-    e.target.author.value = '';
-    dispatch(addBookAction(title, author));
+    e.target.category.value = '';
+    dispatch(addBookAction(title, category));
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" name="title" placeholder="Book title" required />
-      <input type="text" name="author" placeholder="Author" required />
+      <select name="category" palceholder="Choose a category" required>
+        <option selected disabled value=""> Choose a Category </option>
+        <option value="Fiction">Fiction</option>
+        <option value="Action">Action</option>
+        <option value="Terror">Terror</option>
+      </select>
       <button type="submit">Add book</button>
     </form>
   );
