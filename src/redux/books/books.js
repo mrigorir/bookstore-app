@@ -1,36 +1,61 @@
 import { v4 as uuidv4 } from 'uuid';
+import { getBooks, createNewBook, removeBook } from '../../services/bookApiResources';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+const GET_BOOKS = 'bookStore/books/GET_BOOKS';
 
-const initialState = [];
+const getBooksAction = () => async (dispatch) => {
+  const books = await getBooks();
 
-const addBookAction = (title, author) => ({
-  type: ADD_BOOK,
-  payload: {
-    title,
-    author,
-    id: uuidv4(),
-  },
-});
+  dispatch({
+    type: GET_BOOKS,
+    payload: books,
+  });
+};
 
-const removeBookAction = (id) => ({
-  type: REMOVE_BOOK,
-  payload: {
-    id,
-  },
-});
+const addBookAction = (title, category) => async (dispatch) => {
+  const newBook = {
+    item_id: uuidv4(),
+    title: `${title}`,
+    category: `${category}`,
+  };
 
-const booksReducer = (state = initialState, action) => {
+  await createNewBook(newBook);
+
+  dispatch({
+    type: ADD_BOOK,
+    payload: newBook,
+  });
+};
+
+const removeBookAction = (id) => async (dispatch) => {
+  await removeBook(id);
+
+  dispatch({
+    type: REMOVE_BOOK,
+    payload: {
+      item_id: id,
+    },
+  });
+};
+
+const booksReducer = (state = [], action) => {
   switch (action.type) {
-    case ADD_BOOK:
-      return [...state, action.payload];
+    case GET_BOOKS:
+      return [...state, ...action.payload];
 
-    case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload.id);
+    case ADD_BOOK: {
+      return [...state, action.payload];
+    }
+    case REMOVE_BOOK: {
+      return state.filter((book) => book.item_id !== action.payload.item_id);
+    }
     default:
       return state;
   }
 };
 
-export { addBookAction, removeBookAction, booksReducer };
+export {
+  getBooksAction, addBookAction, removeBookAction, booksReducer,
+};

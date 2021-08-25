@@ -17,8 +17,13 @@
 
 - Redux. 
 
-- Components.
+- Middleware.
 
+- Thunk. 
+
+- API.
+
+- Components.
 ## Image Preview
 ![Screenshot Main Page](./src/img/capture.jpg)
 
