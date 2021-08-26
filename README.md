@@ -24,6 +24,8 @@
 - API.
 
 - Components.
+
+- CSS.
 ## Image Preview
 ![Screenshot Main Page](./src/assets/img/capture.jpg)
 
