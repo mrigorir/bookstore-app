@@ -23,16 +23,19 @@ const AddBook = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="title" placeholder="Book title" value={title} onChange={handleTitle} required />
-      <select name="category" palceholder="Choose a category" value={category} onChange={handleCategory} required>
-        <option selected disabled value=""> Choose a Category </option>
-        <option value="Fiction">Fiction</option>
-        <option value="Action">Action</option>
-        <option value="Terror">Terror</option>
-      </select>
-      <button type="submit">Add book</button>
-    </form>
+    <div className="formContainer">
+      <form onSubmit={handleSubmit}>
+        <h1 className="formTitle">Add New Book</h1>
+        <input type="text" className="formInput" name="title" placeholder="Book title" value={title} onChange={handleTitle} required />
+        <select name="category" className="formSelect" palceholder="Choose a category" value={category} onChange={handleCategory} required>
+          <option selected disabled value=""> Choose a Category </option>
+          <option value="Fiction">Fiction</option>
+          <option value="Action">Action</option>
+          <option value="Terror">Terror</option>
+        </select>
+        <button type="submit" className="formButton">Add book</button>
+      </form>
+    </div>
   );
 };
 export default AddBook;

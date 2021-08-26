@@ -4,6 +4,10 @@ import AddBook from './components/books/AddBook';
 import BookList from './components/books/BookList';
 import Categories from './components/categories';
 import './App.css';
+import './assets/styles/nav.css';
+import './assets/styles/book.css';
+import './assets/styles/circle.css';
+import './assets/styles/form.css';
 
 function App() {
   return (
@@ -14,8 +18,8 @@ function App() {
           <Categories />
         </Route>
         <Route path="/">
-          <AddBook />
           <BookList />
+          <AddBook />
         </Route>
       </Switch>
     </Router>

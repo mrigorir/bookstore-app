@@ -25,7 +25,7 @@
 
 - Components.
 ## Image Preview
-![Screenshot Main Page](./src/img/capture.jpg)
+![Screenshot Main Page](./src/assets/img/capture.jpg)
 
 ## Getting Started
 
