@@ -29,6 +29,8 @@
 ## Image Preview
 ![Screenshot Main Page](./src/assets/img/capture.jpg)
 
+## :star::star: [Live Demo](https://reverent-lumiere-3226bd.netlify.app/) :star::star:
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
