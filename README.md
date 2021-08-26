@@ -24,8 +24,12 @@
 - API.
 
 - Components.
+
+- CSS.
 ## Image Preview
-![Screenshot Main Page](./src/img/capture.jpg)
+![Screenshot Main Page](./src/assets/img/capture.jpg)
+
+## :star::star: [Live Demo](https://reverent-lumiere-3226bd.netlify.app/) :star::star:
 
 ## Getting Started
 

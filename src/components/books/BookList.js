@@ -9,7 +9,7 @@ const BookList = () => {
   hooks();
 
   return (
-    <ul>
+    <ul className="bookList">
       {books.map((book) => (
         <Book
           key={book.item_id}
