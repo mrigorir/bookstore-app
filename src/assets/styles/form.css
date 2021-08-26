@@ -5,7 +5,7 @@
 }
 
 .formTitle {
-  font-family: 'm-bold';
+  font-family: 'm-bold', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   color: var(--warm-gray);
@@ -58,10 +58,9 @@
 }
 
 .formButton {
-  font-family: 'robotoSlab';
+  font-family: 'robotoSlab', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 0.9rem;
-  font-weight: 100;
   color: #fff;
   text-transform: uppercase;
   background-color: var(--azure);
@@ -86,7 +85,7 @@
   .formInput::placeholder {
     padding-left: 20px;
   }
-  
+
   .formInput,
   .formSelect,
   .formButton {
@@ -94,4 +93,3 @@
     margin: 10px auto;
   }
 }
-
